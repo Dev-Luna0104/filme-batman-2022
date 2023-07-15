@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+header {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px red double;
+}
+
+.nav-header {
+    margin-right: 15px;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#logo {
+    height: 50%;
+    filter: contrast(5);
+    transition:  2s;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+#logo:hover {
+    transform:scale(1.8) ;
+    filter: saturate(0);
+    border-left: 3px red solid;
+    border-right: 3px red solid;
+}
+
+.ul-header {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navContato {
+    
+    background-color: gainsboro;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-header {
+    color: white;
+    width: 140px;
+    height: 25px;
+    cursor: pointer;
+    font-family:fantasy;
+    letter-spacing: 1px;
+    transition: .5s;
+    transition-delay: 0.4s;
+    font-size: 15px; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+.li-header:hover {
+    color: rgba(255, 50, 50);
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.container-contato {
+    width: auto;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px red solid;
+    border-right: 4px red solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.img-bat {
+    background-image: url("https://cinemaeafins.com.br/wp-content/uploads/2021/10/The-Batman-Filme-2022.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container-form {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.9), black);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+form {
+    font-family: fantasy;
+    letter-spacing: 2px;
+    width: 55%;
+    height:65%;
+    margin-bottom: 150px;
+    padding: 10px 0 0 10px;
+    border-left: 3px solid grey;
+    border-right: 2px solid grey;
+    transform: scale(1.1);
+}
+
+h2 {
+    color: gainsboro;
+    margin-top: 25px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    text-shadow: 0 3px 10px black;
+}
+    
+label {
+    display: block;
+    margin-top: 5px;
+}
+input {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+textarea {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 95%;
+}
+
+.button-cont {
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+}
+
+button {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px white double;
+    border-radius: 5px;
+    align-items: center;
+    transition: 1s;
+}
+
+button:hover {
+    background-color:  rgba(255, 0, 0, 0.07);
+    border: 4px double;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: grid;
+    border-top: 10px red double;
+}
+
+.container-footer {
+    margin: 15px 0 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.container-span {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.span-footer {
+    width: auto;
+    font-family: fantasy;
+    font-size: lar;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav-footer {
+    display: none;
+}
+@media(max-width:768px) {
+
+    header {
+        background-color: gainsboro;
+    }
+    
+    .nav-header {
+        margin-right: 0px;
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .ul-header {
+        display: none;
+    }
+
+    form {
+        
+        width: 70%;
+        height:65%;
+        transform: scale(1.1);
+    }
+
+    .container-span {
+        font-size: 18px;
+        letter-spacing: 2px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        row-gap: 15px;
+    }
+
+    .nav-footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ul-footer {
+        width: 80%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+    }
+
+    .li-footer {
+        letter-spacing: 2px;
+        font-size: 23px;
+        font-family: fantasy;
+        text-align: center;
+        align-items: center;
+    }
+
+}
